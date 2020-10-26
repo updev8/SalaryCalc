@@ -1,0 +1,25 @@
+.tip {
+  position: relative;
+}
+
+.tip__content {
+  position: absolute;
+  top: 140%;
+  left: 65%;
+  z-index: 9999;
+  width: 260px;
+  padding: 15px;
+  background: var(--accent-color-secondary);
+  color: var(--text-color-secondary);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--accent-color-secondary)
+      var(--accent-color-secondary);
+  }
+}
